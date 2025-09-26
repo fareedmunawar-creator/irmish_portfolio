@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5" />
+      <stop offset="100%" stop-color="#D8BFD8" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-gradient)" opacity="0.8" />
+  <text x="400" y="300" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Recipe Finder</text>
+  <g transform="translate(400, 350)">
+    <rect x="-150" y="-30" width="300" height="60" rx="10" ry="10" fill="#FFFFFF" opacity="0.3" />
+    <text x="0" y="5" font-family="Arial" font-size="20" text-anchor="middle" fill="#FFFFFF">HTML • CSS • JavaScript • API</text>
+  </g>
+</svg>

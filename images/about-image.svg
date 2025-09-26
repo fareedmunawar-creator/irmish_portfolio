@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5" />
+      <stop offset="100%" stop-color="#F8E1F4" />
+    </linearGradient>
+    <linearGradient id="skin-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDBAC" />
+      <stop offset="100%" stop-color="#F1C27D" />
+    </linearGradient>
+    <linearGradient id="dress-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC0CB" />
+      <stop offset="100%" stop-color="#D8BFD8" />
+    </linearGradient>
+    <linearGradient id="hair-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A2C2A" />
+      <stop offset="100%" stop-color="#2D1A19" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="250" cy="250" r="200" fill="url(#bg-gradient)" opacity="0.6" />
+  
+  <!-- Girl character -->
+  <g transform="translate(250, 250)">
+    <!-- Hair back -->
+    <path d="M-60,-100 C-90,-80 -100,-30 -90,30 C-80,80 -40,110 0,120 C40,110 80,80 90,30 C100,-30 90,-80 60,-100 Z" fill="url(#hair-gradient)" />
+    
+    <!-- Neck -->
+    <rect x="-20" y="0" width="40" height="50" rx="15" ry="15" fill="url(#skin-gradient)" />
+    
+    <!-- Dress/Top -->
+    <path d="M-70,40 C-60,30 -30,20 0,20 C30,20 60,30 70,40 L80,150 L-80,150 Z" fill="url(#dress-gradient)" />
+    
+    <!-- Arms -->
+    <g transform="rotate(-20)">
+      <path d="M-60,50 C-80,70 -90,90 -70,120" stroke="url(#skin-gradient)" stroke-width="25" stroke-linecap="round" fill="none" />
+    </g>
+    <g transform="rotate(20)">
+      <path d="M60,50 C80,70 90,90 70,120" stroke="url(#skin-gradient)" stroke-width="25" stroke-linecap="round" fill="none" />
+    </g>
+    
+    <!-- Face -->
+    <circle cx="0" cy="-50" r="60" fill="url(#skin-gradient)" />
+    
+    <!-- Eyes -->
+    <g transform="translate(0, -10)">
+      <ellipse cx="-20" cy="-55" rx="8" ry="10" fill="#4A2C2A" />
+      <ellipse cx="20" cy="-55" rx="8" ry="10" fill="#4A2C2A" />
+      
+      <!-- Eyebrows -->
+      <path d="M-35,-75 C-25,-80 -15,-80 -5,-75" stroke="#4A2C2A" stroke-width="3" fill="none" />
+      <path d="M5,-75 C15,-80 25,-80 35,-75" stroke="#4A2C2A" stroke-width="3" fill="none" />
+      
+      <!-- Smile -->
+      <path d="M-25,-25 C-15,-15 15,-15 25,-25" stroke="#4A2C2A" stroke-width="3" fill="none" />
+    </g>
+    
+    <!-- Blush -->
+    <circle cx="-30" cy="-30" r="10" fill="#FFC0CB" opacity="0.4" />
+    <circle cx="30" cy="-30" r="10" fill="#FFC0CB" opacity="0.4" />
+    
+    <!-- Hair front -->
+    <path d="M-60,-100 C-40,-110 40,-110 60,-100 L40,-70 C20,-80 -20,-80 -40,-70 Z" fill="url(#hair-gradient)" />
+    <path d="M-60,-80 C-70,-60 -70,-40 -60,-20" stroke="url(#hair-gradient)" stroke-width="15" stroke-linecap="round" fill="none" />
+    <path d="M60,-80 C70,-60 70,-40 60,-20" stroke="url(#hair-gradient)" stroke-width="15" stroke-linecap="round" fill="none" />
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="20" fill="#FFC0CB" opacity="0.3" />
+  <circle cx="400" cy="150" r="30" fill="#D8BFD8" opacity="0.3" />
+  <circle cx="120" cy="380" r="25" fill="#FFC0CB" opacity="0.3" />
+  <circle cx="380" cy="350" r="15" fill="#D8BFD8" opacity="0.3" />
+  
+  <!-- Code symbols -->
+  <g fill="#D8BFD8" opacity="0.7" transform="translate(80, 180) rotate(-15)">
+    <text x="0" y="0" font-family="monospace" font-size="24">&lt;/&gt;</text>
+  </g>
+  <g fill="#FFC0CB" opacity="0.7" transform="translate(400, 300) rotate(10)">
+    <text x="0" y="0" font-family="monospace" font-size="24">{}</text>
+  </g>
+  <g fill="#D8BFD8" opacity="0.7" transform="translate(150, 400) rotate(-5)">
+    <text x="0" y="0" font-family="monospace" font-size="24">[]</text>
+  </g>
+</svg>
